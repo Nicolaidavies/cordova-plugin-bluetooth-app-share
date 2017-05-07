@@ -9,11 +9,14 @@ It looks for the current app's apk file, renames it to the name provided and the
 
 ```js
 // Using cordova
-window.cordova.plugins.shareapp.share(string: nameOfApkFile)
+window.cordova.plugins.shareapp.share(string: fileName)
 
 // Using Ionic 
-window['cordova'].plugins.shareapp.share(string: nameOfApkFile)
+window['cordova'].plugins.shareapp.share(string: fileName)
 ```
+
+Note `fileName` is required.
+
 
 
 ## Example
