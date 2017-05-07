@@ -5,9 +5,13 @@
   <clobbers target="cordova.plugins.shareapp" /></js-module>
   <platform name="android">
     <config-file parent="/*" target="res/xml/config.xml">
+      <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+      <preference name="AndroidExtraFilesystems" value="sdcard,cache" />
       <feature name="shareapp"><param name="android-package" value="io.nicolai.shareapp.shareapp" /></feature>
     </config-file>
-    <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+    <config-file parent="/*" target="AndroidManifest.xml">
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    </config-file>
     <source-file src="src/android/shareapp.java" target-dir="src/io/nicolai/shareapp/shareapp" />
   </platform>
 </plugin>

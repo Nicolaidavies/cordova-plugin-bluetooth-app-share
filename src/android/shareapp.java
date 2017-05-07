@@ -29,7 +29,6 @@ import java.io.OutputStream;
 
 
 public class shareapp extends CordovaPlugin {
-  BluetoothAdapter mBluetoothAdapter;
   String TAG = "BT TRANSFER";
   Integer REQUEST_ENABLE_BT = 0;
   
@@ -53,12 +52,12 @@ public class shareapp extends CordovaPlugin {
 
   private void sendAPK (String fileName) {
         try {
-            ApplicationInfo app = getApplicationContext().getApplicationInfo();
+            ApplicationInfo app = this.cordova.getActivity().getApplicationContext().getApplicationInfo();
             String filePath = app.sourceDir;
 
             File apk = new File(filePath);
             
-            File outputFile = new File(getExternalFilesDir(null), fileName + ".apk");
+            File outputFile = new File(this.cordova.getActivity().getApplicationContext().getExternalFilesDir(null), fileName + ".apk");
 
             copy(apk, outputFile);
 
@@ -71,7 +70,7 @@ public class shareapp extends CordovaPlugin {
             intent.setPackage("com.android.bluetooth");
             // Append file and send Intent
             intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(outputFile));
-            startActivity(Intent.createChooser(intent, "Share app"));
+            this.cordova.getActivity().startActivity(Intent.createChooser(intent, "Share app"));
         } catch (IOException e) {
             Log.d(TAG, e.toString());
         }
