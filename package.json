@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-bluetooth-app-share",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Share your cordova android app from within the app itself using Bluetooth.",
   "main": "www/shareapp.js",
   "scripts": {
