@@ -6,6 +6,8 @@ It looks for the current app's apk file, renames it to the name provided and the
 
 It's useful in places where access to internet is limited. Originally created for the Emoyeni app which works completely offline.
 
+Link to [React Native version here](https://github.com/Nicolaidavies/react-native-bluetooth-app-share)
+
 ## API
 
 ```js
