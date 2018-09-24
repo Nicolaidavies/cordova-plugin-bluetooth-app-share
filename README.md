@@ -8,6 +8,14 @@ It's useful in places where access to internet is limited. Originally created fo
 
 Link to [React Native version here](https://github.com/Nicolaidavies/react-native-bluetooth-app-share)
 
+Read more about the plugin on [my website](https://nicolai.io/projects/bluetooth-share)
+
+## Install
+
+```
+cordova plugin add cordova-plugin-bluetooth-app-share
+```
+
 ## API
 
 ```js

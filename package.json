@@ -1,0 +1,19 @@
+{
+  "name": "cordova-plugin-bluetooth-app-share",
+  "version": "1.0.0",
+  "description": "Share your cordova android app from within the app itself using Bluetooth.",
+  "main": "www/shareapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicolaidavies/cordova-plugin-bluetooth-app-share.git"
+  },
+  "author": "Nicolai Davies",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nicolaidavies/cordova-plugin-bluetooth-app-share/issues"
+  },
+  "homepage": "https://github.com/Nicolaidavies/cordova-plugin-bluetooth-app-share#readme"
+}
