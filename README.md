@@ -1,9 +1,10 @@
 # Share App Cordova Plugin
 
-Allows you to share your cordova app via bluetooth. 
+Allows you to share your cordova app's .apk file via bluetooth.
 
+It looks for the current app's apk file, renames it to the name provided and then sends it via bluetooth to another phone.
 
-It looks for the current app's apk file, renames it to the name provided and then sends it via bluetooth to another phone.  
+It's useful in places where access to internet is limited. Originally created for the Emoyeni app which works completely offline.
 
 ## API
 
